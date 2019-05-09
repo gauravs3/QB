@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuickBookApi.QuickBook_Api_s
+namespace QuickBook.BAL.Services
 {
     public class AccountService
     {
         string baseUrl = "";
-
     }
 }

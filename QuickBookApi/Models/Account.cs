@@ -2,20 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuickBookApi.Models
+namespace QuickBook.BAL.Models
 {
-    public class CurrencyRef
-    {
-        public string name { get; set; }
-        public string value { get; set; }
-    }
-
-    public class MetaData
-    {
-        public DateTime CreateTime { get; set; }
-        public DateTime LastUpdatedTime { get; set; }
-    }
-
     public class Account
     {
         public string FullyQualifiedName { get; set; }

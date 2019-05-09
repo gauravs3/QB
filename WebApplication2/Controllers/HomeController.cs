@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApplication1.Controllers
+namespace WebApplication2.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,20 +13,19 @@ namespace WebApplication1.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-            //Prepare scopes
-            List<OidcScopes> scopes = new List<OidcScopes>();
-            scopes.Add(OidcScopes.Accounting);
-            //Get the authorization URL
-            string authorizeUrl = oauthClient.GetAuthorizationURL(scopes);
-            Redirect(authorizeUrl);
             return View();
         }
 
-
-        public ActionResult CallBack()
+        public ActionResult About()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
 
             return View();
         }

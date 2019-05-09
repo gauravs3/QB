@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace QuickBookApi.Models
+namespace QuickBook.BAL.Models
 {
     public class APAccountRef
     {
@@ -16,11 +16,7 @@ namespace QuickBookApi.Models
         public string value { get; set; }
     }
 
-    public class CurrencyRef
-    {
-        public string name { get; set; }
-        public string value { get; set; }
-    }
+    
 
     public class LinkedTxn
     {
@@ -67,12 +63,7 @@ namespace QuickBookApi.Models
         public string Description { get; set; }
     }
 
-    public class MetaData
-    {
-        public DateTime CreateTime { get; set; }
-        public DateTime LastUpdatedTime { get; set; }
-    }
-
+   
     public class Bill
     {
         public string SyncToken { get; set; }
